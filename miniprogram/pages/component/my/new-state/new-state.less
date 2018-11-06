@@ -1,0 +1,45 @@
+@import "../../../../style/style.less";
+.page__hd{
+	display: flex;
+	justify-content: space-between;
+	.q-input{
+		border: 1px solid purple;
+		height: 100rpx;
+		width: 600rpx;
+		margin-left: 15rpx;
+		margin-bottom:15rpx;
+		border-radius: 10rpx 0 0 10rpx;
+		font-size: 28rpx;
+		padding-left: 30rpx;
+		color: purple;
+	}
+	.pic-div{
+		height: 100rpx;
+		width: 100rpx;
+		border: 1px solid purple;
+		border-radius: 0 10rpx 10rpx 0;
+		margin-right: 15rpx;
+		.q-pic{
+			font-size:100rpx;
+			color:#999;
+			line-height:100rpx;
+			height: 100rpx; 
+		}
+	}
+}
+.weui-cells{
+	&:before{
+		border-top: none;
+	}
+	border-radius: 20rpx;
+	margin: 0 15rpx;
+	.weui-uploader__title{
+		font-size: 28rpx;
+	}
+}
+.q-done{
+		margin-top: 5rpx;
+		color: white;
+		background-color: purple;
+		margin: auto 15rpx;
+	}

@@ -1,0 +1,24 @@
+<!--pages/component/index/buy-cut-inner/cut-inner.wxml-->
+<view class="q-shop">
+	<image class="q-img" src="{{shopData.imgs.cut}}" bindtap='showShop' data-id='{{shopData.id}}'/>
+	<view class="weui-cell weui-cell_access q-info">
+		<view class="weui-cell-bd left-info">
+			<p>最低价:{{shopData.price}}元
+				<span class='q-origin-pirce'>{{shopData.originPrice}}元</span>
+			</p>
+			<p>还剩{{shopData.restNum}}份</p>
+		</view>
+		<view class="weui-cell-ft right-info">
+			<p>距离结束</p>
+			<p>{{restTime}}</p>
+		</view>
+	</view>
+	<view class="q-bottom">
+		<view>{{shopData.shop}}</view>
+		<view class='q-btn-div'>
+			<button type="primary" size="mini"open-type='share' class="q-btn" > 分享链接 </button>
+			<button type="primary" size="mini" class="q-btn"data-id='{{shopData.id}}' bindtap='showShop'> 立即购买 </button>
+		</view>
+	</view>
+</view>
+

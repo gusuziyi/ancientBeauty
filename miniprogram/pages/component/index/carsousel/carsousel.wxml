@@ -1,0 +1,9 @@
+<!--miniprogram/pages/component/carsousel/carsousel.wxml-->
+<swiper class='q-carsousel' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+    circular="{{circular}}">
+	<block wx:for="{{imgUrls}}" wx:key='index'>
+		<swiper-item>
+			<image src="{{item}}"catchtap='goNav' data-url='{{item}}' class="slide-image q-img" />
+		</swiper-item>
+	</block>
+</swiper>

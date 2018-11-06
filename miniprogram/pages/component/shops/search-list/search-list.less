@@ -1,0 +1,102 @@
+@import '../../../../style/btn.less';
+.weui-cells{
+	background-color: #F6F6F6;
+	padding: auto 20rpx;
+	margin-top: 0;
+}
+.q-title{
+	font-size: 28rpx;
+	padding: 10px;
+	padding-top: 20rpx;
+	margin-bottom: -10rpx;
+	.q-square{
+		height: 40rpx;
+		width: 15rpx;
+		background-color: purple;
+		margin-right: 10rpx;
+	}
+	.weui-cell__bd{
+		display: flex;
+		justify-content: space-between;
+		.q-filter-set{
+			width: 500rpx;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			.q-filter{
+				color: #999999;
+			}
+			.q-active{
+				color: orangered;
+			}
+		}
+	}
+}
+.q-shop{
+	font-size: 30rpx;
+	border-radius: 10rpx;
+	margin: 15rpx;
+	background-color: white;
+	&:before{
+		border-top: none;
+	}
+	height: 200rpx;
+	.q-img{
+		width: 200rpx;
+		height: 200rpx;
+	}
+	.q-info{
+		.q-name{
+			font-size: 34rpx;
+			color: purple;
+			margin-bottom: 10rpx;
+			margin-top: 10rpx;
+		}
+		width: 450rpx;
+		color: @fontColor;
+		margin-left: 30rpx;
+		p{
+			display: block;
+			margin-bottom: 15rpx;
+		}
+		.q-two-group{
+			border-radius: 5rpx;
+			background-color: purple;
+			color: white;
+			padding:0 7rpx;
+			font-size: 24rpx;
+		}
+		.q-two-group+span{
+			margin-left: 20rpx;
+			margin-top: 10rpx;
+			font-size: 24rpx;
+		}
+		.q-price{
+			color: orangered;
+		}
+		.q-origin-pirce{
+			font-size: 24rpx;
+			color: #666666;
+			margin-left: 15rpx;
+		}
+		.q-bottom{
+			padding-left: 0;
+			padding-top: 10rpx;
+			margin-top: 30rpx;
+			display: flex;
+			justify-content: space-between;
+			font-size: 28rpx;
+			.q-sell{
+				color: #666666;
+			}
+			&:before{
+				border-top: none;
+			}
+			.q-btn{
+				margin-left: 0;
+				background-color: @btnColor;
+				font-size: @btnFontSize;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<!--pages/component/list/shops-list/shops-list.wxml-->
+<view class="weui-cells q-shops">
+	<block wx:for='{{shopData}}' wx:for-item='shop' wx:key='index'>
+		<view class="q-shop" >
+			<image class="q-img" src="{{shop.imgs.hot}}" bindtap='goShop' data-id='{{shop.id}}'/>
+			<view class="q-info">
+				<view bindtap='goShop' data-id='{{shop.id}}'>
+				<p class="q-name">{{shop.shop}}</p>
+				<p class="q-price">{{shop.price}}元</p>
+				</view>
+				<view class="q-bottom">
+					<p class="q-sell">已售{{shop.sellNum}}件</p>
+					<text wx:if='{{favArr[index]}}' class='iconfont icon-check-circle q-submit'bindtap='myFav' data-index='{{index}}'></text>
+					<text wx:else class='iconfont icon-heart q-submit' data-index='{{index}}'bindtap='myFav'></text>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>

@@ -1,0 +1,7 @@
+<!--miniprogram/pages/list/list.wxml-->
+<search-bar></search-bar>
+<view class="q-list">
+	<aside ></aside>
+	<shops-list shop-data="{{shopData}}" fav-arr="{{favArr}}"></shops-list>
+</view>
+

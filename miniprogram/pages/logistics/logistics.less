@@ -1,0 +1,67 @@
+@import '../../style/style.less';
+@import '../component/cart/cart/cart.less';
+.q-btn-pub() {
+    height: 45rpx;
+    width: 150rpx;
+    font-size: 22rpx;
+    margin-top: 10rpx;
+    background-color: rgba(80, 0, 80, 0.9);
+    color: white;
+    padding: auto 10rpx;
+}
+
+#q-info {
+	.q-img{
+		width: 220rpx;
+		margin-left: 20rpx;
+	}
+	.q-name{
+		margin-bottom: 0rpx;
+	}
+    .q-pricenum {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        .q-num {
+            font-size: 26rpx;
+            width: 150rpx;
+            height: 30rpx;
+            min-height: 1em;
+            color: purple;
+            text-align: center;
+            margin-right: 10rpx;
+        }
+        .q-price {
+            color: orangered;
+            font-size: 28rpx;
+        }
+    }
+    .q-btn-query {
+        .q-btn-pub();
+        margin-right: 10rpx;
+		height: 50rpx;
+		padding: 0;
+		margin-top: 20rpx;
+		font-size: 24rpx;
+    }
+    .q-btn-query:active {
+        color: #ccc;
+    }
+}
+
+#q-empty{
+	p{
+		display: block;
+	}
+	.q-f{
+		margin-top: -50rpx;
+	}
+}
+#q-right{
+	width: 200rpx;
+	display: flex;
+	justify-content: flex-end;
+	.q-btn-account{
+		width: 200rpx;
+	}
+}

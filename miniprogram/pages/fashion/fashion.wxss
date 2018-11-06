@@ -1,0 +1,10 @@
+/* miniprogram/pages/fashion/fashion.wxss */
+.q-shops{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto 20rpx;
+}
+page{
+	background-color: #EAEAEA;
+}

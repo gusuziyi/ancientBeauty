@@ -1,0 +1,15 @@
+{
+	"_openid": "oCCgN5OsJd1h4yLW2MTtPIzHRwV0",
+	"id":1,
+	"shops": "之子于归旗舰店",
+	"area": "广东广州",
+	"class":"写真",
+	"shop":[{
+		"name":"佳期如梦古风写真",
+		"imgs":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-1.jpg",
+		"price":399,
+		"num":5,
+		"types": "试用版",
+		"sizes": "小号"
+	}]
+}

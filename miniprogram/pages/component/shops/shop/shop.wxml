@@ -1,0 +1,87 @@
+<!--pages/component/shops/shop/shop.wxml-->
+<view class="weui-cells">
+		<image class="q-img" src="{{shopData.imgs.sqr}}" />
+		<view class="q-shop">
+			<view class="q-bottom">
+				<view class='q-title'>
+					<text class='q-name'>{{shopData.shop}}</text>
+					<view class='q-chat'>
+						<view class='q-rabot' bindtap='helloJas'>
+							<text class='iconfont icon-message q-share-icon'></text>
+							<text class='q-jas'>智能客服</text>
+						</view>
+						<view class='q-share'>
+							<button open-type="contact" class="q-jas-btn" session-from="weapp">
+								<text class='iconfont icon-message q-share-icon'></text>
+								<text class='q-jas'>人工客服</text>
+							</button> 
+						</view>
+					</view>
+				</view>
+				<view class="q-money">
+					<p class="q-price">{{price}}元
+						<span class='q-origin-pirce'>{{shopData.originPrice}}元</span>
+						<span class='q-remain'>还剩{{shopData.restNum}}份</span>
+					</p>
+					<p class="q-remain-time">
+						<view>距离结束</view>
+						<view class="q-time">{{restTime}}</view >
+					</p>
+				</view>
+				<view class='q-area'>
+					<text class='q-sell'>已售出{{shopData.sellNum}}件</text>
+					<text class='q-city'>{{shopData.area}}</text>
+				</view>
+				<view class='q-alt'>
+					<view class='q-square'></view>
+					<view >尺寸</view>
+					<radio-group class="radio-group" bindchange="radioChange" data-name='choosedSize'>
+						<label class="radio" wx:for="{{shopData.altSizes}}" wx:key="index">
+							<radio value="{{item.price}},{{item.value}}"  color='purple' checked="{{item.checked}}"/>{{item.value}}
+						</label>
+					</radio-group>
+				</view>
+				<view class='q-alt'>
+					<view class='q-square'></view>
+					<view>类型</view>
+					<radio-group class="radio-group" bindchange="radioChange" data-name='choosedType'>
+						 <label class="radio" wx:for="{{shopData.altTypes}}" wx:key="index">
+							<radio value="{{item.price}},{{item.value}}" color='purple' checked="{{item.checked}}"/>{{item.value}}
+						  </label>
+					</radio-group>
+				</view>
+				<view class='q-btn-div'>
+					<view class='q-icons'>
+						<view class="q-share-icons" bindtap='goShops'>
+							<text class="iconfont icon-shop "></text>
+							<p>店铺</p>
+						</view>
+						<view class="q-share-icons" bindtap='goFav'>
+							<text wx:if="{{fav}}" class="iconfont icon-check-circle"></text>
+							<text wx:else class="iconfont icon-star"></text>
+							<p wx:if="{{fav}}">已收藏</p>
+
+							<p wx:else>收藏</p>
+						</view>
+						<view class="q-share-icons" >
+							<button class='share' open-type='share' bindtap='goShare'>
+							<text class="iconfont icon-share "></text>
+							<p>分享</p>
+							</button>
+						</view>
+					</view>
+					<view class='q-btns'>
+						<button type="primary" size="mini" class="q-btn" bindtap="putInCart" > 加购物车 </button>
+						<button type="primary" size="mini" class="q-btn"bindtap="onBuy"> 立即购买 </button>
+					</view>
+				</view>
+			</view>
+		</view>
+</view>
+
+<buy id='modal' 
+    bind:cancelEvent="_cancelEvent"  
+    bind:confirmEvent="_confirmEvent">
+></buy>
+
+<maybe-like id='maybeLike' is-in-shop="{{true}}" ></maybe-like>

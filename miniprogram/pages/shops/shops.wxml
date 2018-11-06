@@ -1,0 +1,19 @@
+<!--miniprogram/pages/shops/shops.wxml-->
+<view class="q-top">
+	<view class='q-left'>
+		<view class='q-b'>
+			<text class='iconfont icon-shop q-icon'></text>
+			<text class='q-name'>{{shopsName}}</text>
+		</view>
+		<view class='q-b'>
+			<text class='iconfont icon-location q-icon'></text>
+			<text class='q-area'>{{area}}</text>
+		</view>
+	</view>
+	<image class='q-pic q-right' src='./mm.png'></image>
+</view>
+
+<carsousel id='carsousel' img-urls="{{imgUrls}}" ></carsousel> <!-- 轮播图-->
+<buy-cut shops-data="{{shopsData}}" shop-data="{{cutData}}"in-shops='{{true}}'></buy-cut>
+<buy-group shops-data="{{shopsData}}" shop-data="{{groupData}}"in-shops='{{true}}'></buy-group> <!-- 团购 -->
+<buy-hot shops-data="{{shopsData}}" shop-data="{{hotData}}"fav-arr="{{favArr}}" in-shops='{{true}}'></buy-hot> <!-- 热销-->

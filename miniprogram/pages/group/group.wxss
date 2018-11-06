@@ -1,0 +1,4 @@
+/* miniprogram/pages/group/group.wxss */
+page{
+	background-color: #EAEAEA;
+}

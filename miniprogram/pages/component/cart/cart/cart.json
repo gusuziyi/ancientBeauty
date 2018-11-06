@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "buy": "../../shops/buy/buy",
+	  "maybe-like": "../maybe-like/maybe-like"
+  }
+}

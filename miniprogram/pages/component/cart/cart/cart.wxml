@@ -1,0 +1,66 @@
+<!--pages/component/cart/cart/cart.wxml-->
+
+<wxs module="filters" src="./filters.wxs"></wxs>
+<view class="weui-cells q-cart">
+	<view class="q-title weui-cell" >
+			<p wx:if="{{shopsArr.length}}">购物车</p>
+			<p wx:if="{{shopsArr.length}}">共选择了{{shopNum}}件商品</p>
+	</view>
+	<view class="q-body">
+		<view class="q-shops">
+			<block wx:for='{{shopsArr}}' wx:key='findex' wx:for-item="shops" wx:for-index='findex'>
+				<view class="q-shop">
+					<view class="weui-cell q-shop-title">
+						<radio bindtap='checkShops'class='q-radio' value="{{shops.shops}}"checked='{{shopChecked[findex].value}}' data-findex="{{findex}}" color='purple' />
+						<view class="weui-cell__bd q-shopname">{{shops.shops}}</view>
+						<view class="weui-cell-ft">
+							<navigator url="../shops/shops?shops={{shops.shops}}&area={{shops.area}}" class="weui-cell weui-cell_access q-nav" hover-class="weui-cell_active">
+								<view class="q-more">进入店铺</view>
+								<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+							</navigator>
+						</view>
+					</view>
+					<block wx:for="{{shops.shop}}" wx:key="index" wx:for-item="shop">
+						<view class="weui-cell q-shop-goods">
+							<radio  class='q-radio' value="{{shop.name}}" data-index='{{index}}' data-findex='{{findex}}' bindtap='checkShop' data-id='{{shops._id}}'color='purple' checked='{{shopChecked[findex].shopList[index]}}'/>
+							<image class="q-img" src="{{shop.imgs}}"data-id='{{shop.id}}' bindtap='showShop' />
+							<view class="weui-cell-bd q-info">
+								<view data-id='{{shop.id}}' bindtap='showShop'>
+								<p class="q-name">{{shop.name}}</p>
+								<p class="q-type">{{shop.sizes}} {{shop.types}}</p>
+								</view>
+								<view class="q-pricenum">
+									<p class="q-price">{{filters.toFix(shop.price*shop.num,1)}}元</p>
+									<view class="q-bottom">
+										<label class="q-btn-num" bindtap="changeNum" data-index='{{index}}' data-choose='down' data-shops='{{shops.shops}}'data-id='{{shops._id}}'>-</label>
+										<input class="q-num" type="number" value='{{shop.num}}' bindinput="changeNum"  data-index='{{index}}' data-choose='input' data-shops='{{shops.shops}}'data-id='{{shops._id}}'/>
+										<label class="q-btn-num"  bindtap="changeNum" data-index='{{index}}' data-choose='up' data-shops='{{shops.shops}}'data-id='{{shops._id}}'>+</label>
+									</view>
+								</view>
+
+								<button size='mini' class="q-btn-del" data-index='{{index}}' data-shops='{{shops.shops}}'data-id='{{shops._id}}'bindtap='onDel'>删除</button>
+								<button size='mini' class="q-btn-buy" bindtap="onBuy" data-index='{{index}}' data-findex='{{findex}}'>购买</button>
+							</view>
+						</view>
+					</block>
+				</view>
+			</block>
+		</view>
+		<buy id='modal'></buy>
+		<view class='q-all' wx:if="{{shopsArr.length}}">
+			<view class='q-left' bindtap='allCheck'>
+				<radio class='q-radio' value=""  color='purple' checked="{{allCheck}}" />
+				<text class='q-text' wx:if="{{!allCheck}}">全选</text>
+				<text class='q-text' wx:else>反选</text>
+			</view>
+			<view class='q-right'>
+				<view class='q-text'>共计:
+					<text class='q-total'>{{filters.toFix(tatolPrice,1)}}元</text>
+				</view>
+				<button size='mini' class="q-btn-account" bindtap='onBuyAll'>结算</button>
+			</view>
+		</view>
+		<view wx:else class='q-empty'>{{empty}}</view>
+		<maybe-like id='maybeLike'  like-arr="{{likeArr}}"></maybe-like>
+	</view>
+</view>

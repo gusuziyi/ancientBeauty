@@ -1,0 +1,22 @@
+<view class="container" wx:if="{{condition}}">
+	<view class="cityshow">
+		<input value="{{province}}-{{city}}-{{county}}" />
+	</view>
+	<picker-view indicator-style="height: 50px;" value="{{value}}" bindchange="bindChange" class="citybody">
+
+		<picker-view-column class="citypicker">
+			<view wx:for="{{provinces}}" wx:key="item">{{item}}</view>
+		</picker-view-column>
+		<picker-view-column class="citypicker">
+			<view wx:for="{{citys}}" wx:key="item">{{item}}</view>
+		</picker-view-column>
+		<picker-view-column class="citypicker">
+			<view wx:for="{{countys}}" wx:key="item">{{item}}</view>
+		</picker-view-column>
+	</picker-view>
+	<view class='footer'>
+		<text class='btn' catchtap='cancelCity'>取消</text>
+		<text class='btn' catchtap='confirmCity'>确认</text>
+	</view>
+
+</view>

@@ -1,0 +1,176 @@
+@import '../../../../style/style.less';
+.weui-cells {
+    &:before {
+        border-top: none;
+    }
+    &:after {
+        border-bottom: none;
+    }
+    margin-top: 0;
+}
+.q-img {
+    width: 750rpx;
+    height: 730rpx;
+    display: block;
+}
+.q-shop {
+    border-radius: 30rpx;
+    height: 420rpx;
+    padding: 0 20rpx;
+    overflow: hidden;
+    .q-bottom {
+        height: 50rpx;
+        margin-top: 10rpx;
+        font-size: 30rpx;
+        color: rgba(80, 0, 80, 0.8);
+        padding: 0 10rpx;
+        .q-title {
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            .q-name {
+                margin-top: 20rpx;
+                font-size: 38rpx;
+            }
+            .q-chat {
+                display: flex;
+                justify-content: space-between;
+                width: 320rpx;
+                height: 50rpx;
+                .q-rabot {
+                    margin-top: 25rpx;
+                }
+                .q-share {
+                    width: 160rpx;
+                    height: 50rpx;
+                    .q-jas-btn {
+                        background-color: transparent;
+                        &:after {
+                            border: none;
+                        }
+                        padding: 0;
+                        color: rgba(80, 0, 80, 0.8);
+                        .icon-message {
+                            width: 30rpx;
+                            height: 30rpx;
+                            display: inline-block;
+                        }
+                        .q-jas {
+                            // margin-left: 10rpx;
+                            font-size: 30rpx;
+                        }
+                    }
+                }
+            }
+        }
+        .q-money {
+            margin-top: 10rpx;
+            width: 700rpx;
+            display: flex;
+            justify-content: space-between;
+            .common() {
+                color: #999;
+                font-size: 30rpx;
+                margin-left: 15rpx;
+            }
+            .q-price {
+                color: orangered;
+                font-size: 34rpx;
+                .q-origin-pirce {
+                    .common();
+                    text-decoration: line-through;
+                }
+                .q-remain {
+                    .common();
+                }
+            }
+            .q-remain-time {
+				width: 150rpx;
+				position:relative;
+                .common();
+				.q-time{
+					position: absolute;
+					top:40rpx;
+					right:30rpx;
+				}
+            }
+        }
+        .q-area {
+            color: #999;
+            font-size: 28rpx;
+            margin-bottom: 25rpx;
+            .q-city {
+                margin-left: 10rpx;
+            }
+        }
+        .q-alt {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 15rpx;
+            font-size: 28rpx;
+            .q-square {
+                height: 40rpx;
+                width: 15rpx;
+                background-color: purple;
+                margin-right: 10rpx;
+            }
+            .radio-group {
+                margin-left: 10rpx;
+            }
+        }
+        .q-btn-div {
+            margin-top: 30rpx;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 28rpx;
+            height: 60rpx;
+            .q-btns {
+                padding-top: 10rpx;
+            }
+            .q-btn {
+                background-color: purple;
+            }
+            .q-icons {
+                display: flex;
+                align-items: baseline;
+            }
+            .q-share-icons {
+                .share {
+                    position: relative;
+                    display: block;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    box-sizing: border-box;
+                    font-size: 28rpx;
+                    text-align: center;
+                    text-decoration: none;
+                    line-height: 1;
+                    border-radius: 0;
+                    -webkit-tap-highlight-color: transparent;
+                    overflow: hidden;
+                    color: rgba(80, 0, 80, 0.8);
+                    box-shadow: none;
+                    background-color: white;
+                    &:after {
+                        border: none;
+                    }
+                }
+
+                display: inline-block;
+                width: 90rpx;
+                height: 60rpx;
+                text-align: center;
+                .iconfont {
+                    height: 40rpx;
+                    display: block;
+                }
+            }
+            button + button {
+                margin-left: 10rpx;
+            }
+        }
+    }
+}

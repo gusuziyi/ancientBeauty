@@ -1,0 +1,7 @@
+<!--miniprogram/pages/list/list.wxml-->
+<search-bar></search-bar>  <!-- 搜索框-->
+<option></option> <!-- 选项卡-->
+<carsousel img-urls="{{imgUrls}}"></carsousel> <!-- 轮播图-->
+<buy-cut id="buyCut" ></buy-cut> <!-- 套餐 -->
+<buy-group id="buyGroup" ></buy-group> <!-- 团购 -->
+<buy-hot id='buyHot'></buy-hot> <!-- 热销-->

@@ -1,0 +1,4 @@
+/* miniprogram/pages/suit/suit.wxss */
+#items .q-item {
+	border-bottom: 1px solid purple;
+}

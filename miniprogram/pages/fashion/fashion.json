@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+		"fashion": "../component/index/buy-hot-inner/hot-inner",
+		"search-bar": "../component/index/search/search"
+	}
+}

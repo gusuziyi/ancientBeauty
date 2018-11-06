@@ -1,0 +1,63 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/shops/search-list/search-list",
+    "pages/shops/shop/shop",
+    "pages/jas/jas",
+    "pages/logistics/logistics",
+    "pages/my/video/video",
+    "pages/my/video/play/play",
+    "pages/shops/shops",
+    "pages/pay/pay",
+    "pages/fashion/fashion",
+    "pages/group/group",
+    "pages/suit/suit",
+    "pages/help/help"
+  ],
+  "window": {
+    "backgroundColor": "#800080",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#800080",
+    "navigationBarTitleText": "美妆小铺古风版",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#800080",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/icons_01.png",
+        "selectedIconPath": "images/tabBar/icons_13.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "分类",
+        "iconPath": "images/tabBar/icons_02.png",
+        "selectedIconPath": "images/tabBar/icons_14.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/tabBar/icons_03.png",
+        "selectedIconPath": "images/tabBar/icons_15.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的美妆",
+        "iconPath": "images/tabBar/icons_04.png",
+        "selectedIconPath": "images/tabBar/icons_16.png"
+      },
+      {
+        "pagePath": "pages/logistics/logistics",
+        "text": "物流查询",
+        "iconPath": "images/tabBar/icons_05.png",
+        "selectedIconPath": "images/tabBar/icons_17.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+<!--pages/component/my/userinfo/userinfo.wxml-->
+<view class="container">
+
+	<!-- 用户信息 -->
+	<view class="userinfo">
+		<button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})">
+		</button>
+		<view class='userinfo-nickname'>
+			<text wx:if='{{logged}}'>{{userInfo.nickName}}</text>
+			<text wx:else>点击头像登录</text>
+		</view>
+		<navigator url="video/video" class='q-myfav' hidden='{{!logged}}'>
+			<text class='iconfont icon-video q-star' bindtap="showFav"></text>
+			<text class='q-fav'>视频直播</text>
+		</navigator>
+	</view>
+</view>

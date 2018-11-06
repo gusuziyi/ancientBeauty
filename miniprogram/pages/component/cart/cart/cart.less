@@ -1,0 +1,197 @@
+@import '../../../../style/style.less';
+page {
+    background-color: #f6f6f6;
+}
+.q-btn-pub() {
+    height: 40rpx;
+    width: 120rpx;
+    font-size: 20rpx;
+    margin-top: 10rpx;
+    background-color: rgba(80, 0, 80, 0.9);
+    color: white;
+}
+.q-cart {
+    position: relative;
+    margin-top: 0;
+    width: 750rpx;
+    &:after {
+        border-bottom: none;
+    }
+    .q-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white;
+        height: 400rpx;
+        width: 690rpx;
+        background-color: purple;
+    }
+    .weui-cell:before {
+        border-top: none;
+    }
+    .q-body {
+        position: absolute;
+        top: 150rpx;
+        .q-shops {
+            width: 650rpx;
+            margin-left: 50rpx;
+            display: block;
+            .q-shop {
+                border-radius: 30rpx;
+                // box-shadow: #333 0 0 10px ;
+                background-color: white;
+                margin-bottom: 20rpx;
+                width: 650rpx;
+                .q-radio {
+                    width: 20rpx;
+                }
+                &-title {
+                    font-size: 30rpx;
+                    padding-bottom: 0;
+                    .q-shopname {
+                        margin-left: 40rpx;
+						color: rgba(80,0,80,.8);
+						font-size: 32rpx;
+                    }
+                    .q-nav {
+                        &:before {
+                            border-top: none;
+                        }
+                        .q-more {
+                            color: #999999;
+                        }
+                    }
+                }
+                &-goods {
+                    height: 250rpx;
+                    display: flex;
+                    align-items: center;
+					.q-radio {
+						width: 100rpx;
+						display: inline-block;
+						
+					}
+                    .q-img {
+                        width: 250rpx;
+                        height: 190rpx;
+                    }
+                    .q-info {
+						
+                        .q-name {
+                            font-size: 34rpx;
+                            color: purple;
+                            margin-bottom: 20rpx;
+                        }
+                        width: 450rpx;
+                        margin-left: 30rpx;
+                        p {
+                            display: block;
+                        }
+						.q-type{
+							font-size: 28rpx;
+							color: darkgrey;
+							margin-bottom: 5rpx;
+						}
+                        .q-pricenum {
+                            display: flex;
+                            align-items: stretch;
+							margin-bottom: 10rpx;
+                            .q-price {
+                                color: orangered;
+                                display: inline;
+								font-size: 30rpx;
+                            }
+                            .q-bottom {
+                                margin-left: 30rpx;
+                                margin-top: 7rpx;
+                                height: 20rpx;
+                                display: inline-flex;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                                font-size: 20rpx;
+                                .q-num {
+                                    font-size: 20rpx;
+                                    width: 50rpx;
+                                    height: 30rpx;
+                                    min-height: 1em;
+                                    color: purple;
+                                    text-align: center;
+                                    border: 1px solid purple;
+                                }
+                                .q-btn-num {
+                                    height: 30rpx;
+                                    width: 30rpx;
+                                    background-color: rgba(80, 0, 80, 0.9);
+                                    border: 1px solid purple;
+                                    color: white;
+                                    text-align: center;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .q-btn-del {
+                            .q-btn-pub();
+                        }
+						.q-btn-buy {
+							.q-btn-pub();
+							margin-left: 10rpx;
+						}
+                        .q-btn-del:active {
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+        .q-all {
+            width: 650rpx;
+            display: flex;
+            justify-content: space-between;
+            font-size: 28rpx;
+            padding: 50rpx;
+            padding-top: 30rpx;
+            height: 40rpx;
+            .q-left {
+                display: flex;
+                justify-content: space-between;
+				align-content: center;
+                width: 120rpx;
+                .q-radio {
+                    width: 20rpx;
+                }
+            }
+            .q-right {
+                width: 360rpx;
+                display: flex;
+                justify-content: flex-end;
+                align-content: flex-end;
+				align-content: center;
+                line-height: 40rpx;
+                .q-total {
+                    color: orangered;
+                    margin-right: 20rpx;
+                }
+                .q-btn-account {
+                    .q-btn-pub();
+                    margin-top: 0;
+                    height: 50rpx;
+                    font-size: 25rpx;
+                    width: 120rpx;
+                    &:active {
+                        color: #ccc;
+                    }
+					margin-right:0rpx;
+                }
+            }
+        }
+		.q-empty{
+			color: white;
+			font-size: 34rpx;
+			width: 650rpx;
+			padding: 50rpx;
+			height: 60rpx;
+			text-align: center;
+			margin-top: -80rpx;
+		}
+	}
+}

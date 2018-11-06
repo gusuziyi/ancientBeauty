@@ -1,0 +1,9 @@
+/* miniprogram/pages/list/list.wxss */
+page{
+	background-color:#f6f6f6;
+}
+.q-list{
+	display: flex;
+	justify-content: space-between;
+	margin: 25rpx;
+}

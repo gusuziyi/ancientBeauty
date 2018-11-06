@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>美妆小铺图片预览</title>
+	</head>
+	<body>
+		<img src="功能图片预览/主界面.jpg" />
+		<img src="功能图片预览/主界面2.jpg" />
+		<img src="功能图片预览/主界面3.jpg" />
+		<img src="功能图片预览/分类列表.jpg" />
+		<img src="功能图片预览/搜索.jpg" />
+		<img src="功能图片预览/店铺.jpg" />
+		<img src="功能图片预览/商品展示.jpg" />
+		<img src="功能图片预览/分享.jpg" />
+		<img src="功能图片预览/智能推荐.jpg" />
+		<img src="功能图片预览/购物车.jpg" />
+		<img src="功能图片预览/购买页面.jpg" />
+		<img src="功能图片预览/购买页面收货地址.jpg" />
+		<img src="功能图片预览/物流定位.jpg" />
+		<img src="功能图片预览/客服.jpg" />
+		<img src="功能图片预览/客服机器人.jpg" />
+		<img src="功能图片预览/状态发表.jpg" />
+		<img src="功能图片预览/状态修改.jpg" />
+		<img src="功能图片预览/直播.jpg" />
+		<img src="功能图片预览/直播弹幕.jpg" class='last' />
+		<div id="tip" class="tip"></div>
+	</body>
+</html>
+<style type="text/css">
+@media screen and (min-width: 801px) {
+    img {
+    	width: 24%;
+    	height: 24%;
+    }
+    .last {
+    	width: 48%;
+    	height: 48%;
+    	vertical-align: top;
+    }
+    .tip {
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	display: none;
+    	color: white;
+    	background-color: purple;
+    	padding: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	.last {
+		width: 100%;
+		height: 100%;
+		vertical-align: top;
+	}
+	.tip {
+		display: none;
+		color: transparent;
+	}
+}
+	
+</style>
+<script type="text/javascript">
+	var imgs = document.getElementsByTagName("img"),
+		tip = document.getElementById("tip")
+	var lastLeft = 0,
+		lastTop = 0
+	for (i = 0; i < imgs.length; i++) {
+		imgs[i].addEventListener('mouseover', function(e) {
+			var src = e.path[0].outerHTML;
+			var title = src.substring(src.indexOf('/') + 1, src.indexOf("."))
+			tip.innerHTML = title
+			tip.style.display = 'block'
+			if (e.pageX - lastLeft) {
+				tip.style.left = e.pageX - 30 + 'px';
+			} else {
+				tip.style.left = e.pageX + 30 + 'px';
+			}
+			if (e.pageY - lastTop) {
+				tip.style.top = e.pageY - 30 + 'px';
+			} else {
+				tip.style.top = e.pageY + 30 + 'px';
+			}
+			lastLeft = e.pageX
+			lastTop=e.pageY
+		})
+	}
+</script>

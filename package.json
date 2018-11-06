@@ -1,0 +1,25 @@
+{
+  "name": "nail color",
+	"version": "0.0.1",
+  "description": "qmzy's first weixin App",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gusuziyi"
+  },
+  "homepage": "https://github.com/gusuziyi",
+  "author": "qmzy",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-less": "^3.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

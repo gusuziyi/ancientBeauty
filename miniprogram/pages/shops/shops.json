@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"carsousel": "../component/index/carsousel/carsousel",
+		"cut-inner": "../component/index/buy-cut-inner/cut-inner",
+		"buy-group": "../component/index/buy-group/buy-group",
+		"buy-hot": "../component/index/buy-hot/buy-hot",
+		"buy-cut": "../component/index/buy-cut/buy-cut"
+	}
+}

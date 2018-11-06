@@ -1,0 +1,8 @@
+<!--miniprogram/pages/my/video/play/play.wxml-->
+<view class="section tc">
+  <video id="myVideo" src="{{src}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <input placeholder="发射一条可爱哒弹幕吧" bindblur="bindInputBlur" value='{{inputValue}}'/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view> 
+</view> 

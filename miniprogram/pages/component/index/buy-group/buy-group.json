@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+  	"group-inner": "../buy-group-inner/group-inner"
+  }
+}

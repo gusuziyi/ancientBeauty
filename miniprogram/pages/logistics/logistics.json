@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+			"logistics": "../component/logistics/logistics/logistics",
+			"shop-list": "../component/logistics/shop-list/shop-list",
+			"maybe-like": "../component/cart/maybe-like/maybe-like"
+		}
+}

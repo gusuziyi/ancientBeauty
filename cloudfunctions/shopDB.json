@@ -1,0 +1,519 @@
+{
+	"id": 1,
+	"shops": "之子于归旗舰店",
+	"area": "广东广州",
+	"class":"写真",
+	"shop":"佳期如梦古风写真",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-1.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-1.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-1.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-1.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-1.jpg"
+	},
+	"restTime":2,
+	"originPrice":599,
+	"price":399,
+	"sellNum":420,
+	"restNum":120,
+	"fav":false,
+	"altTypes": [{
+			"price": 0.5,
+			"value": "醉花荫",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "少年游"
+		},
+		{
+			"price": 3,
+			"value": "鹊桥仙"
+		},
+		{
+			"price": 5,
+			"value": "点绛唇"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "三色",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "八色"
+		},
+		{
+			"price": 4,
+			"value": "十六色"
+		}
+	]
+} {
+	"id": 2,
+	"shops": "之子于归旗舰店",
+	"area": "广东广州",
+	"class":"写真",
+	"shop":"花开并蒂盛世写真",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-2.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-2.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-2.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-2.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-2.jpg"
+	},
+	"restTime":5,
+	"originPrice":899,
+	"price":699,
+	"sellNum":180,
+	"restNum":70,
+	"fav":true,
+	"altTypes": [{
+			"price": 0.4,
+			"value": "青色",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "粉色"
+		},
+		{
+			"price": 3,
+			"value": "红色"
+		},
+		{
+			"price": 5,
+			"value": "紫色"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "花开半夏",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "茉莉世家"
+		},
+		{
+			"price": 4,
+			"value": "万紫千红"
+		}
+	]
+}
+{
+	"id": 3,
+	"shops": "锦绣华南旗舰店",
+	"area": "广东珠海",
+	"class":"旅游",
+	"shop":"阳光海滩欢乐度假",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-3.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-3.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-3.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-3.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-3.jpg"
+	},
+	"restTime":20,
+	"originPrice":199,
+	"price":149,
+	"sellNum":1340,
+	"restNum":840,
+	"fav":false,
+	"altTypes": [{
+			"price": 0.6,
+			"value": "鼓浪屿",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "海南岛"
+		},
+		{
+			"price": 3,
+			"value": "夏威夷"
+		},
+		{
+			"price": 5,
+			"value": "巴厘岛"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "小孩",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "会员卡"
+		},
+		{
+			"price": 4,
+			"value": "成人票"
+		}
+	]
+}
+{
+	"id": 4,
+	"shops": "白泽旗舰店",
+	"area": "广东潮州",
+	"class":"音乐",
+	"shop":"鸾凤合鸣潮州古琴",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-4.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-4.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-4.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-4.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-4.jpg"
+	},
+	"restTime":3,
+	"originPrice":3299,
+	"price":2899,
+	"sellNum":240,
+	"restNum":150,
+	"fav":false,
+	"altTypes": [{
+			"price": 1,
+			"value": "实木",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "红木"
+		},
+		{
+			"price": 3,
+			"value": "楠木"
+		},
+		{
+			"price": 5,
+			"value": "黑檀木"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "渔舟唱晚",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "梅花三弄"
+		},
+		{
+			"price": 4,
+			"value": "雪山春晓"
+		}
+	]
+}
+{
+	"id": 5,
+	"shops": "之子于归旗舰店",
+	"area": "广东广州",
+	"class":"写真",
+	"shop":"执子之手唯美写真",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-5.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-5.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-5.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-5.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-5.jpg"
+	},
+	"restTime":3,
+	"originPrice":699,
+	"price":499,
+	"sellNum":35,
+	"restNum":40,
+	"fav":true,
+	"altTypes": [{
+			"price": 0.8,
+			"value": "天之痕",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "樱花树"
+		},
+		{
+			"price": 3,
+			"value": "梅花鹿"
+		},
+		{
+			"price": 5,
+			"value": "海之女"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "100张",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "300张"
+		},
+		{
+			"price": 4,
+			"value": "800张"
+		}
+	]
+}
+{
+	"id": 6,
+	"shops": "锦绣华南旗舰店",
+	"area": "广东珠海",
+	"class":"旅游",
+	"shop":"岁月静好甜蜜之旅",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-6.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-6.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-6.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-6.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-6.jpg"
+	},
+	"restTime":4,
+	"originPrice":299,
+	"price":249,
+	"sellNum":40,
+	"restNum":80,
+	"fav":false,
+	"altTypes": [{
+			"price": 0.2,
+			"value": "体验版",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "自由行"
+		},
+		{
+			"price": 3,
+			"value": "邂逅版"
+		},
+		{
+			"price": 5,
+			"value": "极光行"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "单人",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "双人"
+		},
+		{
+			"price": 4,
+			"value": "全家"
+		}
+	]
+}
+{
+	"id": 7,
+	"shops": "之子于归旗舰店",
+	"area": "广东广州",
+	"class":"写真",
+	"shop":"青青子衿挚爱典藏",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-7.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-7.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-7.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-7.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-7.jpg"
+	},
+	"restTime":7,
+	"originPrice":899,
+	"price":699,
+	"sellNum":135,
+	"restNum":420,
+	"fav":true,
+	"altTypes": [{
+			"price": 0.3,
+			"value": "麻布",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "网格布"
+		},
+		{
+			"price": 3,
+			"value": "高光纸"
+		},
+		{
+			"price": 5,
+			"value": "油画布"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "12寸",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "20寸"
+		},
+		{
+			"price": 4,
+			"value": "36寸"
+		}
+	]
+}
+{
+	"id": 8,
+	"shops": "锦绣华南旗舰店",
+	"area": "广东珠海",
+	"class":"旅游",
+	"shop":"踏雪寻梅北国之旅",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-8.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-8.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-8.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-8.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-8.jpg"
+	},
+	"restTime":5,
+	"originPrice":399,
+	"price":249,
+	"sellNum":80,
+	"restNum":56,
+	"fav":false,
+	"altTypes": [{
+			"price": 0.4,
+			"value": "普通款",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "浪漫款"
+		},
+		{
+			"price": 3,
+			"value": "文艺款"
+		},
+		{
+			"price": 5,
+			"value": "古典款"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "一天",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "三天"
+		},
+		{
+			"price": 4,
+			"value": "七天"
+		}
+	]
+}
+{
+	"id": 9,
+	"shops": "白泽旗舰店",
+	"area": "广东潮州",
+	"class":"音乐",
+	"shop":"悠悠紫竹水韵巴乌",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-9.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-9.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-9.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-9.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-9.jpg"
+	},
+	"restTime":6,
+	"originPrice":599,
+	"price":499,
+	"sellNum":50,
+	"restNum":70,
+	"fav":false,
+	"altTypes": [{
+			"price": 0.6,
+			"value": "F调",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "G调"
+		},
+		{
+			"price": 3,
+			"value": "降B调"
+		},
+		{
+			"price": 5,
+			"value": "C调"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "紫竹版",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "红木版"
+		},
+		{
+			"price": 4,
+			"value": "黑檀木版"
+		}
+	]
+}
+{
+	"id": 10,
+	"shops": "点绛唇旗舰店",
+	"area": "山东潍坊",
+	"class":"美妆",
+	"shop":"盛世红妆凤栖于桐",
+	"imgs":{
+		"car":"cloud://yun-first-47b560.7975-yun-first-47b560/img/car-10.jpg",
+		"sqr":"cloud://yun-first-47b560.7975-yun-first-47b560/img/sqr-10.jpg",
+		"rect":"cloud://yun-first-47b560.7975-yun-first-47b560/img/rect-10.jpg",
+		"cut":"cloud://yun-first-47b560.7975-yun-first-47b560/img/cut-10.jpg",
+		"hot":"cloud://yun-first-47b560.7975-yun-first-47b560/img/hot-10.jpg"
+	},
+	"restTime":5,
+	"originPrice":89,
+	"price":69,
+	"sellNum":120,
+	"restNum":230,
+	"fav":true,
+	"altTypes": [{
+			"price": 0.4,
+			"value": "暮雨",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "笙歌"
+		},
+		{
+			"price": 3,
+			"value": "伊人"
+		},
+		{
+			"price": 5,
+			"value": "落花"
+		}
+	],
+	"altSizes": [{
+			"price": 1,
+			"value": "在水一方",
+			"checked": true
+		},
+		{
+			"price": 2,
+			"value": "枫叶晚霞"
+		},
+		{
+			"price": 4,
+			"value": "盛世红妆"
+		}
+	]
+}

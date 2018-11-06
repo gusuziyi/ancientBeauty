@@ -1,0 +1,8 @@
+<!--miniprogram/pages/pay/pay.wxml-->
+<view class='q-btn' bindtap="previewImage">
+	<text class='iconfont icon-wechat-fill q-icon'></text>
+	<text class='q-title'>点击生成付款二维码</text>
+</view>
+<button class='pay-botton' bindtap='onscan'>扫描二维码</button>
+<textarea class='q-tip' cols="16" disabled="disabled">提示:①个人小程序无法使用支付api,只能用如上二维码方式收款;②且小程序无法扫描收款码,必须退出后在微信内识别;③下图是我搜集的微信常见支付接口对比</textarea>
+<image class='q-diff' src='{{diff}}' bindtap="previewDiff"></image>

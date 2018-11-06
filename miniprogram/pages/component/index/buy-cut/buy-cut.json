@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+  		"cut-inner": "../buy-cut-inner/cut-inner"
+  	}
+}

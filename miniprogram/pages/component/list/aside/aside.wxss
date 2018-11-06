@@ -1,0 +1,1 @@
+@import "../../../../style/weui.wxss";.q-aside{margin-top:0;font-size:28rpx;width:180rpx}.q-aside:before{border-top:none}.q-aside:after{border-bottom:none}.q-aside .q-nav{border-radius:10rpx;color:purple;text-align:center;height:40rpx}.q-aside .q-nav:before{border-top:none}.q-aside .q-nav+.q-nav{border-top:1px dotted plum}

@@ -1,0 +1,40 @@
+@import './png.less'; 
+.q-panel{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: auto 10rpx;
+	.q-nav{
+		width: 120rpx;
+		height: 150rpx;
+		text-align: center;
+		padding: 20rpx;
+		// background-color: #000000;//测试nav位置用
+		display: inline-flex;
+		&:before{
+			border-top:none; //去除项目上面的斜线
+		}
+		.q-img{
+			width: 92rpx;
+			height: 92rpx;
+			.png();
+			background-repeat: no-repeat;
+			background-size: 514rpx 229rpx;
+		}
+		.chao{background-position: 0 0;}
+		.miao{background-position: -144rpx 0;}
+		.tao{background-position: -283rpx 0;}
+		.bo{background-position: -426rpx 0;}
+		.mo{background-position: 0 -142rpx;}
+		.wu{background-position: -144rpx -142rpx;}
+		.mei{background-position: -283rpx -142rpx;}
+		.bang{background-position: -426rpx -142rpx;}
+		.q-title{
+			color: purple;
+			font-weight: bold;
+			margin-top: 10rpx;
+			font-size: 25rpx;
+		}
+	}
+}
+	

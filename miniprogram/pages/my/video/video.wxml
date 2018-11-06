@@ -1,0 +1,52 @@
+<view class='camera-container'>
+	<camera device-position='{{devicePosition}}' flash='{{flash}}' binderror='cameraError' bindstop='cameraStop' class='camera-view'>
+	</camera>
+	<view class='content-view'>
+		<view class='camera-property-view'>
+			<view class='devive-flash-view'>
+				<text>闪光灯</text>
+				<radio-group class='device-position-radio' bindchange='flashRadioChange'>
+					<label class="radio" wx:for='{{flashs}}' wx:key='id'>
+						<radio color='purple' value='{{item.value}}' checked='{{item.checked}}'>{{item.name}}</radio>
+					</label>
+				</radio-group>
+			</view>
+			<view class='devive-position-view'>
+				<text>摄像头</text>
+				<radio-group class='device-position-radio' bindchange='deviceRadioChange'>
+					<label class="radio" wx:for='{{devicePositions}}' wx:key='id'>
+						<radio color='purple' value='{{item.value}}' checked='{{item.checked}}'>{{item.name}}</radio>
+					</label>
+				</radio-group>
+			</view>
+			<view class='devive-module-view'>
+				<text>模 式</text>
+				<radio-group class='device-position-radio' bindchange='moduleRadioChange'>
+					<radio color='purple' value='pic' checked='{{isTakePhoto}}'>拍照</radio>
+					<radio color='purple' value='video' checked='{{!isTakePhoto}}'>录制</radio>
+				</radio-group>
+			</view>
+		</view>
+		<view class='camera-action-view'>
+
+			<block wx:if='{{isTakePhoto}}'>
+				<view class='main-button main-photo-button' hover-class='hover-photo-button' bindtap='takePhoto'>拍照</view>
+			</block>
+			<block wx:else>
+				<view wx:if='{{recordState==0}}' class='main-button main-photo-button' hover-class='hover-photo-button' bindtap='recordVideo'>录制</view>
+				<view wx:if='{{recordState==1}}' class='main-button main-record-video' bindtap='stopRecord'>录制中</view>
+				<view wx:if='{{recordState==2}}' class='main-button main-photo-button' bindtap='recordVideo'>录制完成</view>
+			</block>
+		</view>
+	</view>
+	<view class='q-tip'>本场录制 <text class='q-intro'>点击可回放</text></view>
+	<scroll-view class='preview-view' scroll-x='true' scroll-into-view='{{toView}}'>
+			<block wx:for='{{dataList}}' wx:key='id' wx:for-item='item'>
+				<view class='q-thumb'>
+					<image id='image{{index}}' class='image-list' src='{{item.thumbPath}}' bindtap='imageClick' data-type='{{item.type}}'
+					 data-src='{{item.src}}'></image>
+					<view wx:if="{{item.type=='video'}}" class="weui-badge q-badge">视频</view>
+				</view>
+			</block>
+	</scroll-view>
+</view>

@@ -1,0 +1,1 @@
+.page{color:#8b008b;padding:30rpx;font-size:28rpx}.page .q-header .q-title{font-size:34rpx;text-align:center}.page .q-header .q-author{text-align:center;margin-bottom:20rpx}.page .q-header .q-desc{text-indent:2em}.page .q-article{margin-top:20rpx}.page .q-article .q-title{margin-bottom:-10rpx}.page .q-article .q-p{text-indent:2em;margin-top:10rpx;text-align:justify}

@@ -1,0 +1,9 @@
+<!--miniprogram/pages/suit/suit.wxml-->
+<search-bar></search-bar>
+<view id='items'>
+	<block wx:for='{{shopsData}}' wx:key="index" wx:for-item="shopData">
+		<cut-inner class='q-item' shop-data="{{shopData}}" rest-time="{{restTime}}"></cut-inner>
+	</block>
+</view>
+
+

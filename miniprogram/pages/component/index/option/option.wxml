@@ -1,0 +1,27 @@
+<!--miniprogram/pages/component/option/option.wxml-->
+<view class='page'>
+	<view class="page-bd">
+		<view class="weui-panel weui-panel_access">
+			<view class="weui-panel__bd q-panel">
+				<block wx:for='{{optionDataOne}}' wx:key='index'>
+					<navigator url="{{item.url}}" class="weui-media-box weui-media-box_appmsg q-nav" hover-class="weui-cell_active">
+						<view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+							<image class="['weui-media-box__thumb','q-img',{{item.style}}]" />
+							<view class="weui-media-box__title q-title">{{item.name}}</view>
+						</view>
+					</navigator>
+				</block>
+			</view>
+			<view class="weui-panel__bd q-panel">
+				<block wx:for='{{optionDataTwo}}' wx:key='index'>
+					<view data-url="{{item.url}}" data-name='{{item.style}}' class="weui-media-box weui-media-box_appmsg q-nav" bindtap='goNav' hover-class="weui-cell_active">
+						<view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+						<image class="['weui-media-box__thumb','q-img',{{item.style}}]" />
+							<view class="weui-media-box__title q-title">{{item.name}}</view>
+						</view>
+					</view>
+				</block>
+			</view>
+		</view>
+	</view>
+</view>

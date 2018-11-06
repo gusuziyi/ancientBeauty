@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+			"search-bar": "../component/index/search/search",
+			"aside": "../component/list/aside/aside",
+			"shops-list": "../component/list/shops-list/shops-list"
+		}
+}

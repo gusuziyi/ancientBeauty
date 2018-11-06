@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+			"new-state": "../component/my/new-state/new-state",
+			"state": "../component/my/state/state",
+			"userinfo": "../component/my/userinfo/userinfo"
+		}
+}

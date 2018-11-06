@@ -1,0 +1,41 @@
+<!--pages/component/my/new-state/new-state.wxml-->
+<view class="page">
+	<view class="page__hd">
+		<input type="text" class="q-input" placeholder-style="color:plum;text-align:center;font-size: 28rpx;" value="{{userMsg}}"  placeholder='发一条美美的状态吧 (๑╹ヮ╹๑)ﾉ '
+		    bindinput="bindKeyInput"></input>
+		<view class='pic-div' wx:if='{{!uploder}}' bindtap="showUploder">
+
+			<text class="iconfont icon-plus-circle q-pic" ></text>
+		</view>
+		<view class="pic-div" wx:else bindtap="hiddenUploder">
+			<text class="iconfont icon-up-circle q-pic" ></text>
+		</view>
+	</view>
+	<view class="page__bd" wx:if='{{uploder}}'>
+		<view class="weui-cells">
+			<view class="weui-cell">
+				<view class="weui-cell__bd">
+					<view class="weui-uploader">
+						<view class="weui-uploader__hd">
+							<view class="weui-uploader__title">亲,最多上传3张照片噢~</view>
+							<view class="weui-uploader__info">{{files.length}}/3</view>
+						</view>
+						<view class="weui-uploader__bd">
+							<view class="weui-uploader__files" id="uploaderFiles">
+								<block wx:for="{{files}}" wx:key="*this">
+									<view class="weui-uploader__file" bindtap="previewImage" bindlongpress="deleteImage" data-index="{{index}}" id="{{item}}">
+										<image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+									</view>
+								</block>
+							</view>
+							<view class="weui-uploader__input-box" hidden='{{noMorePic}}'>
+								<view class="weui-uploader__input" bindtap="chooseImage"></view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<button class="q-done" bindtap='doUpload'>发送</button>
+</view>

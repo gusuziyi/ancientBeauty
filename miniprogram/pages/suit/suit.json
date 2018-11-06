@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+		"cut-inner": "../component/index/buy-cut-inner/cut-inner",
+		"search-bar": "../component/index/search/search"
+	}
+}

@@ -1,0 +1,76 @@
+@import '../../../../style/btn.less';
+.q-shop{
+	font-size: 30rpx;
+	border-radius: 10rpx;
+	margin: 15rpx;
+	background-color: white;
+	margin-bottom: 15rpx;
+	// border: 1px solid purple;
+	&:before{
+		border-top: none;
+	}
+	height: 220rpx;
+	.q-img{
+		width: 220rpx;
+		height: 220rpx;
+	}
+	.q-info{
+		.q-name{
+			font-size: 34rpx;
+			color: purple;
+		}
+		width: 450rpx;
+		color: @fontColor;
+		margin-left: 40rpx;
+		margin-top: 10rpx;
+		p{
+			display: block;
+			// margin-bottom: 15rpx;
+			font-size: 28rpx;
+		}
+		.q-two-group{
+			border-radius: 5rpx;
+			background-color: purple;
+			color: white;
+			padding:0 7rpx;
+			font-size: 24rpx;
+		}
+		.q-two-group+span{
+			margin-left: 20rpx;
+			margin-top: 10rpx;
+			font-size: 24rpx;
+		}
+		.q-price{
+			color: orangered;
+		}
+		.q-origin-pirce{
+			text-decoration: line-through;
+			font-size: 24rpx;
+			color: #666666;
+			margin-left: 15rpx;
+		}
+		.q-bottom{
+			padding-left: 0;
+			padding-top: 0rpx;
+			display: flex;
+			justify-content: space-between;
+			font-size: 22rpx;
+			margin-top: 25rpx;
+			.q-sell{
+				color: #666666;
+			}
+			&:before{
+				border-top: none;
+			}
+			.q-btn{
+				margin-left: 0;
+				background-color: @btnColor;
+				font-size: 24rpx;
+				line-height: 2;
+			}
+			.q-sell{
+				font-size: 26rpx;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+<!--pages/component/shops/search-list/search-list.wxml-->
+<view class="weui-cells">
+	<view class="weui-cell q-title">
+		<view class="q-square"></view>
+		<view class="weui-cell__bd">
+			筛选
+			<view class="q-filter-set">
+				<view class="['q-filter',{{activePriceUp}}]"  bindtap='sortPriceUp'>价格升序</view>
+				<view class="['q-filter',{{activePriceDown}}]" bindtap='sortPriceDown'>价格降序</view>
+				<view class="['q-filter',{{activeSell}}]" bindtap='sortSell'>累计销量</view>
+			</view>
+		</view>
+	</view>
+	<block wx:for='{{searchResult}}' wx:key="index" wx:for-item="shop">
+		<view class="weui-cell q-shop" >
+			<image class="q-img" src="{{shop.imgs.sqr}}" bindtap='showShop' data-id='{{shop.id}}'/>
+			<view class="weui-cell-bd q-info">
+				<view bindtap='showShop' data-id='{{shop.id}}'>
+				<p class="q-name">{{shop.shop}}</p>
+				<p>
+					<span class="q-price">{{shop.price}}元</span>
+					<span class="q-origin-pirce">{{shop.sellNum}}人付款</span>
+					<span class="q-origin-pirce">{{shop.area}}</span>
+				</p>
+				</view>
+				<view class="weui-cell q-bottom" >
+					<span>{{shop.shops}}</span>
+					<span bindtap='goShops'data-shops='{{shop.shops}}' data-area='{{shop.area}}'>进入店铺></span>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>

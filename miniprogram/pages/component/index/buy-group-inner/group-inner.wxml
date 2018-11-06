@@ -1,0 +1,19 @@
+<!--pages/component/index/buy-group-inner/group-inner.wxml-->
+<view class="weui-cell q-shop">
+	<image class="q-img" src="{{shopData.imgs.sqr}}" data-id='{{shopData.id}}' bindtap='showShop' />
+	<view class="weui-cell-bd q-info">
+		<view data-id='{{shopData.id}}' bindtap='showShop'>
+			<p class="q-name">{{shopData.shop}}</p>
+			<span class="q-two-group">2人团</span>
+			<span>团购套餐立买可减</span>
+			<p>团购价:
+				<span class="q-price">{{shopData.price}}元</span>
+				<span class="q-origin-pirce">({{shopData.originPrice}})元</span>
+			</p>
+		</view>
+		<view class="weui-cell q-bottom">
+			<button type="primary" size='mini' class="q-btn" data-id='{{shopData.id}}' bindtap='showShop'>马上拼团</button>
+			<span class='q-sell'>已团购{{shopData.sellNum}}件</span>
+		</view>
+	</view>
+</view>

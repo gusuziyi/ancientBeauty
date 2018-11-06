@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+  "hot-inner": "../buy-hot-inner/hot-inner"
+  }
+}

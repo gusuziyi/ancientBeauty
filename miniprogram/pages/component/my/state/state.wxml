@@ -1,0 +1,29 @@
+<!--pages/component/my/state/state.wxml-->
+<view class="q-weibos">
+	<block wx:for='{{weibos}}' wx:key="index" wx:for-item='weibo'>
+		<view class="page q-weibo">
+			<view class="page__hd">
+				<view class="page__content" id='textareaDiv'>
+					<textarea cols='20' disabled="{{editDisabled[index]}}" focus="{{editFocus[index]}}" value="{{weibo.userMsg}}"
+					 height="{{height}}" bindinput='newWeibo'></textarea>
+				</view>
+			</view>
+			<view class="page__bd">
+				<view class="weui-grids">
+					<block wx:for="{{weibo.cloudImgUrls}}" wx:key="*this">
+						<view bindtap='previewImage' id='{{item.fileID}}' data-urls='{{weibo.cloudImgUrls}}' class="weui-grid"
+						 hover-class="weui-grid_active">
+							<image class="weui-grid__icon q-img" src="{{item.fileID}}" />
+						</view>
+					</block>
+				</view>
+			</view>
+			<view class='page__ft'>
+				<text class='q-time'>发表于:{{weibo.weiboTime}}</text>
+				<button class="q-btn" size="mini" bindtap='editWeibo' data-weibo='{{weibo}}' data-index="{{index}}" wx:if='{{editDisabled[index]}}'>修改</button>
+				<button class="q-btn" size="mini" bindtap='editWeibo' data-weibo='{{weibo}}' data-index="{{index}}" wx:else>完成</button>
+				<button  class="q-btn" size="mini" bindtap='delWeibo' data-id='{{weibo._id}}' data-index="{{index}}" data-cloudurl="{{weibo.cloudImgUrls}}">删除</button>
+			</view>
+		</view>
+	</block>
+</view>

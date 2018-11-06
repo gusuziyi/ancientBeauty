@@ -1,0 +1,4 @@
+/* miniprogram/pages/cart/cart.wxss */
+.cart{
+	display: block;
+}

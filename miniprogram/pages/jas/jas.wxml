@@ -1,0 +1,14 @@
+<!--miniprogram/pages/jas/jas.wxml-->
+<view class="wrap">
+	<view class="containerBox">
+		<view wx:key="{{index}}" wx:for="{{allContentList}}">
+			<image class='q-qmzy' wx:key="{{index}}" wx:if="{{index%2 == 0}}" mode="aspectFit" src="./qmzy.jpg"></image>
+			<view wx:key="{{index}}" wx:if="{{index%2 == 0}}" class="textBox  fl" style="">{{item.value}}</view>
+			<view wx:key="{{index}}" wx:if="{{index%2 == 1}}" class="textBox  fr">{{item.value}}</view>
+		</view>
+	</view>
+	<view class="handleBox">
+		<input class="input_submit" placeholder="快来调戏小茉吧~" value="{{inputValue}}"  bindinput="bindKeyInput" bindconfirm='submitTo' />
+		<button type="submit" class="btn_submit" size="mini" bindtap="submitTo">发送</button>
+	</view>
+</view>

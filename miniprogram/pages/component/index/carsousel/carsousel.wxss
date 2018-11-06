@@ -1,0 +1,1 @@
+@import "../../../../style/weui.wxss";.q-carsousel{margin-top:30rpx}.q-carsousel,.q-carsousel .q-img{width:750rpx;height:350rpx}

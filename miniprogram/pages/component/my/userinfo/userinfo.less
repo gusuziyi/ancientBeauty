@@ -1,0 +1,60 @@
+@import '../../../../style/style.less';
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.userinfo{
+	margin: 20rpx 0;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  transition: all 300ms ease;
+  &-avatar{
+	  width: 90rpx;
+	  height: 90rpx;
+	  margin: 20rpx;
+	  border-radius: 50%;
+	  background-size: cover;
+	  background-color: white;
+		border: 1px solid rgba(80,0,80,.7);
+	  &:after{
+		  border: none;
+
+	  }
+	}
+  &-nickname{
+		width: 250rpx;
+		height: 100rpx;
+		line-height: 100rpx;
+		font-size: 32rpx;
+		color: purple;
+		background-color: white;
+		background-size: cover;
+	  &:after{
+	  		  border: none;
+	  }
+	 
+	}
+	.q-myfav{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		right: 20rpx;
+		.q-star{
+			font-size: 50rpx;
+			color: purple;
+		}
+		.q-fav{
+			font-size: 30rpx;
+			color: purple;
+			margin: auto 15rpx;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+.modal {
+    z-index: 100;
+    width: 750rpx;
+    height: 1200rpx;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal-content {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 150rpx;
+    height: 800rpx;
+    background: #fff;
+    position: relative;
+    border-radius: 20rpx;
+    .modal-top {
+        padding: 20rpx;
+        height: 50rpx;
+        background: purple;
+        color: white;
+        border-radius: 20rpx 20rpx 0 0;
+        font-size: 30rpx;
+    }
+    .modal-body {
+        padding: 20rpx;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        .q-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid purple;
+            width: 80%;
+            color: purple;
+            padding: 20rpx;
+            font-size: 30rpx;
+            height: 40rpx;
+            margin: auto auto;
+            .q-address {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 300rpx;
+                overflow: hidden;
+                text-align: right;
+            }
+            .q-banks {
+                width: 300rpx;
+                margin: -20rpx;
+				display: flex;
+				justify-content: space-around;
+                .bank {
+                    width: 80rpx;
+                    height: 40rpx;
+                    display: inline-block;
+                    .q-pic {
+                        height: 80rpx;
+                        width: 80rpx;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        padding: 20rpx;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+        display: flex;
+        justify-content: flex-end;
+        .btn {
+            font-size: 30rpx;
+            width: 100rpx;
+            height: 50rpx;
+            background-color: purple;
+            color: white;
+            line-height: 50rpx;
+            text-align: center;
+            margin-right: 20rpx;
+            border-radius: 10rpx;
+        }
+    }
+}

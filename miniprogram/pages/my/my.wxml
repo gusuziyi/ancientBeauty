@@ -1,0 +1,4 @@
+<!--miniprogram/pages/my/my.wxml-->
+<userinfo bind:getweibos='showWeibos'></userinfo>
+<new-state bind:addweibo='updateWeibo'></new-state>
+<state id='state'></state>

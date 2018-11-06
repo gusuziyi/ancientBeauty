@@ -1,0 +1,1 @@
+@import "../../../../style/weui.wxss";.q-title{font-size:28rpx;padding:10px}.q-title .q-square{height:40rpx;width:15rpx;background-color:purple;margin-right:10rpx}.q-title .q-nav:before{border-top:none}.q-title .q-nav .q-more{color:#999}

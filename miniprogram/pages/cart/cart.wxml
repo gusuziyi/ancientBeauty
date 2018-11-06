@@ -1,0 +1,3 @@
+<!--miniprogram/pages/cart/cart.wxml-->
+<cart shops-arr="{{shopsArr}}" id="cart" shop-checked="{{shopChecked}}" like-arr="{{likeArr}}"></cart>
+

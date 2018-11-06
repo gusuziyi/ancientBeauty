@@ -1,0 +1,68 @@
+@import '../../../../style/btn.less';
+@import '../../../../style/style.less';
+.weui-cells{
+	background-color: #F6F6F6;
+	padding: auto 20rpx;
+}
+.q-title{
+	font-size: 28rpx;
+	padding: 10px;
+	margin: 20rpx 0 0 10rpx;
+	.q-square{
+		height: 40rpx;
+		width: 15rpx;
+		background-color: purple;
+		margin-right: 10rpx;
+	}
+}
+.q-shops{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto 20rpx;
+	.q-shop{
+		font-size: 30rpx;
+		border-radius: 15rpx;
+		margin: 10rpx ;
+		background-color: white;
+		width: 330rpx;
+		height: 380rpx;
+		.q-img{
+			width: 330rpx;
+			height: 220rpx;
+		}
+		.q-info{
+			padding-left: 15rpx;
+			padding-right: 15rpx;
+			.q-name{
+				font-size: 32rpx;
+				color: purple;
+			}
+			.q-price{
+				display: block;
+				color: orangered;
+			}
+			.q-sell{
+				color: #666666;
+			}
+			.q-bottom{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				font-size: 24rpx;
+				.q-btn{
+					margin-left: 0;
+					background-color: @btnColor;
+					font-size: @btnFontSize;
+				}
+				.q-submit{
+					width: 60rpx;
+					height: 60rpx;
+					text-align: center;
+					line-height: 60rpx;
+				}
+			}
+		}
+	}
+	
+}

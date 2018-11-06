@@ -1,0 +1,1 @@
+.section{width:750rpx}.section video{width:100%}.btn-area{margin-top:10rpx;padding:20rpx}.btn-area input{border:1px solid purple;height:70rpx;line-height:70rpx;border-radius:10rpx;padding-left:20rpx}.btn-area button{background-color:purple;color:#fff;margin-top:20rpx}

@@ -1,0 +1,10 @@
+{
+	"usingComponents": {
+		"search-bar": "../component/index/search/search",
+		"option": "../component/index/option/option",
+		"carsousel": "../component/index/carsousel/carsousel",
+		"buy-cut": "../component/index/buy-cut/buy-cut",
+		"buy-group": "../component/index/buy-group/buy-group",
+		"buy-hot": "../component/index/buy-hot/buy-hot"
+	}
+}

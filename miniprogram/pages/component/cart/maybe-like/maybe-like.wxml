@@ -1,0 +1,26 @@
+<!--pages/component/cart/maybe-like/maybe-like.wxml-->
+<view class="weui-cells">
+	<view class="weui-cell q-title">
+		<view class="q-square"></view>
+		<view class="weui-cell__bd">猜你喜欢</view>
+	</view>
+	<view class="q-shops">
+		<block wx:for="{{likeArr}}" wx:key="index" wx:for-item="likeShop">
+			<view class="q-shop">
+				<image class="q-img" src="{{likeShop.shop.imgs.hot}}" bindtap='showShop' data-id='{{likeShop.shop.id}}' />
+				<view class="q-info">
+					<view bindtap='showShop' data-id='{{likeShop.shop.id}}'>
+						<p class="q-name">{{likeShop.shop.shop}}</p>
+						<p class="q-price">{{likeShop.shop.price}}元</p>
+					</view>
+					<view class="q-bottom">
+						<p class="q-sell">{{likeShop.title}}</p>
+						<text wx:if='{{favArr[likeShop.shop.id-1]}}' class='iconfont icon-check-circle q-submit' bindtap='myFav'
+						 data-index='{{likeShop.shop.id-1}}'></text>
+						<text wx:else class='iconfont icon-heart q-submit' data-index='{{likeShop.shop.id-1}}' bindtap='myFav'></text>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

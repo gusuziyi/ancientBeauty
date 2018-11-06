@@ -1,0 +1,23 @@
+<!--pages/component/logistics/logistics.wxml-->
+
+<view hidden='{{!isShow}}' >
+  <view class="modal">
+    <view class='modal-content'>
+      <view class='modal-top'>
+        <view class='header'>物流信息</view>
+				<text class='btn' catchtap='_confirmEvent'>确定</text>
+      </view>
+      <view class='modal-body'>
+				<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="6" markers="{{markers}}" include-points="{{polyline[0].points}}"bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location class='q-map' ></map>
+				<view class='q-item'>
+					<text>当前状态</text>
+					<text>运送中</text>
+				</view>
+					<view class='q-item'>
+						<text>预计到达</text>
+						<text>3天内送达</text>
+					</view>
+      </view>
+    </view>
+  </view>
+</view>

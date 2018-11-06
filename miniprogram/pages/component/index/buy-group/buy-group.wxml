@@ -1,0 +1,16 @@
+<!--miniprogram/pages/component/index/buy-group/buy-group.wxml-->
+<view class="weui-cells">
+	<view class="weui-cell q-title">
+		<view class="q-square"></view>
+		<view class="weui-cell__bd">拼团</view>
+		<view class="weui-cell-ft">
+			<view bindtap='goGroup' class="weui-cell weui-cell_access q-nav" hover-class="weui-cell_active">
+				<view class="q-more">查看更多</view>
+				<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+			</view>
+		</view>
+	</view>
+	<block wx:for='{{shopData}}' wx:key='index'>
+		<group-inner shop-data='{{item}}'></group-inner>
+	</block>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/component/list/aside/aside.wxml-->
+<view class="weui-cells q-aside">
+	<view class="weui-cell q-nav" hover-class="weui-cell_active">
+		<view class=" q-title">全部栏目</view>
+	</view>
+	<block wx:for='{{options}}' wx:key='index'>
+		<view data-url="{{item.url}}" data-name="{{item.style}}" class="weui-cell q-nav" hover-class="weui-cell_active"
+		 bindtap='goNav'>
+			<view class=" q-title">{{item.name}}</view>
+		</view>
+	</block>
+</view>

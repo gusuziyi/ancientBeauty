@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+		"group-inner": "../component/index/buy-group-inner/group-inner",
+		"search-bar": "../component/index/search/search"
+	}
+}

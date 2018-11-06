@@ -1,0 +1,7 @@
+<!--miniprogram/pages/fashion/fashion.wxml-->
+<search-bar></search-bar>
+<view class="q-shops">
+	<block wx:for='{{shopsData}}' wx:key="index" wx:for-item="shopData">
+		<fashion class='q-item' shop-data="{{shopData}}" fav-arr="{{favArr}}"></fashion>
+	</block>
+</view>

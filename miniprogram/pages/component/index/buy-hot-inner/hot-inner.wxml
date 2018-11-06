@@ -1,0 +1,15 @@
+<!--pages/component/index/buy-hot-inner/hot-inner.wxml-->
+<view class="q-shop">
+	<image class="q-img" src="{{shopData.imgs.hot}}" data-id='{{shopData.id}}' bindtap='showShop' />
+	<view class="q-info">
+		<view data-id='{{shopData.id}}' bindtap='showShop'>
+			<p class="q-name">{{shopData.shop}}</p>
+			<p class="q-price">{{shopData.price}}元</p>
+		</view>
+		<view class="q-bottom">
+			<p class="q-sell">已售{{shopData.sellNum}}件</p>
+			<text wx:if='{{favArr[shopData.id-1]}}' class='iconfont icon-check-circle q-submit' bindtap='myFav' data-index='{{shopData.id-1}}'></text>
+			<text wx:else class='iconfont icon-heart q-submit' data-index='{{shopData.id-1}}' bindtap='myFav'></text>
+		</view>
+	</view>
+</view>

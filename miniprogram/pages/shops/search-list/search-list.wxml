@@ -1,0 +1,3 @@
+<!--miniprogram/pages/shops/search-list/search-list.wxml-->
+<search-bar is-self='{{true}}'></search-bar>
+<search-list search-result="{{searchResult}}"></search-list>

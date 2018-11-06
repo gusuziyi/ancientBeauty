@@ -1,0 +1,58 @@
+@import '../../../../style/btn.less';
+.q-shop{
+	// border-radius: 30rpx;
+	position: relative;
+	height: 480rpx;
+	padding: 0 20rpx;
+	overflow: hidden;
+	width: 700rpx;
+	padding-bottom: 10rpx;
+	padding-top:10rpx;
+	margin:20rpx auto;
+	border-bottom: 1rpx solid purple;
+	.q-img{
+		width: 700rpx;
+		height:400rpx;
+	}
+	.q-info{
+		box-sizing: border-box;
+		width: 700rpx;
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		bottom: 100rpx;
+		font-size: 30rpx;
+		background-color: rgba(80,0,80,.6);
+		color: white;
+		height: 150rpx;
+		p{
+			display: block;
+			.q-origin-pirce{
+				text-decoration: line-through;
+				font-size: 26rpx;
+				margin-left: 15rpx;
+			}
+		}
+	}
+	.q-bottom{
+		height: 50rpx;
+		margin: 0;
+		font-size: 30rpx;
+		color: rgba(80,0,80,.8);
+		display: flex;
+		justify-content: space-between;
+		padding: 0 10rpx;
+		align-items: center;
+		.q-btn-div{
+			display: flex;
+			align-items: flex-end;
+			.q-btn{
+				background-color: @btnColor;
+				font-size: @btnFontSize;
+			}
+		}
+		button+button{
+			margin-left: 10rpx;
+		}
+	}
+}

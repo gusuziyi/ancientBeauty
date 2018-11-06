@@ -1,0 +1,52 @@
+<!--pages/component/shops/buy/buy.wxml-->
+<view hidden='{{!isShow}}' >
+  <view class="modal">
+    <view class='modal-content'>
+      <view class='modal-top'>
+        <view class='header'>确认订单</view>
+      </view>
+      <view class='modal-body'>
+				<view class='q-item'>
+					<text>店铺名称</text>
+					<text>{{shopData.shopname}}</text>
+				</view>
+					<view class='q-item'>
+						<text>产品名称</text>
+						<text>{{shopData.name}}</text>
+					</view>
+					<view class='q-item'>
+						<text>产品类型</text>
+						<text>{{shopData.size}} {{shopData.type}}</text>
+					</view>
+					<view class='q-item'>
+						<text>产品数量</text>
+						<text>{{shopData.num}}</text>
+					</view>
+					<view class='q-item'>
+						<text>商品总价</text>
+						<text>{{shopData.totalPrice}}元</text>
+					</view>
+					<view class='q-item' bindtap='chooseCity'>
+						<text>收货地址</text>
+						<text class='q-address'>{{address}}</text>
+					</view>
+					<view class='q-item'>
+						<text>支付方式</text>
+						<view class='q-banks'>
+						<block wx:for='{{bankData}}' wx:key='index' > 
+							<view class="['bank',{{item.enname}}]" >
+								<image src='{{item.src}}' class='q-pic'data-index='{{index}}'bindtap='chooseBank'></image>
+							</view>
+						</block>
+						</view>
+					</view>
+      </view>
+      <view class='modal-footer'>
+        <text class='btn' catchtap='_cancelEvent'>取消</text>
+        <text class='btn' catchtap='_confirmEvent'>提交</text>
+      </view>
+    </view>
+  </view>
+	<city-choose id='chooseCity' bind:check-city="checkedCity"></city-choose>
+</view>
+
